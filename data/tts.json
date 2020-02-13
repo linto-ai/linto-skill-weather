@@ -1,0 +1,24 @@
+{
+  "en-US": {
+    "say": {
+      "temperatureToday": " temperature is ",
+      "temperatureNextDay": " tomorrow temperature will be between ",
+      "weatherTodayIs": "The weather is ",
+      "weatherNextIs": "tomorrow weather will be",
+      "error_city_weather": "Could not retrive the weather for this city : ",
+      "error_api": "Could not retrive the weather from the web-site",
+      "error_no_city": "No city has been detected"
+    }
+  },
+  "fr-FR": {
+    "say": {
+      "temperatureToday": " la température est de ",
+      "temperatureNextDay": " demain la température sera comprit entre ",
+      "weatherTodayIs": "Le temps ai : ",
+      "weatherNextIs": "demain le temps sera : ",
+      "error_city_weather": "Je n'arrive pas à récupérer les informations de cette ville : ",
+      "error_api": "Je n'ai pas réussi a récupérer les informations du site internet",
+      "error_no_city": "Aucune ville détecter"
+    }
+  }
+}
