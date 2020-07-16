@@ -1,25 +1,25 @@
 <script type="text/x-red" data-template-name="linto-skill-weather">
     <div class="form-row">
-        <label for="node-input-name"><i class="fa fa-tag"/> <span data-i18n="linto-skill-weather.label.name" /></label>
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="linto-skill-weather.label.name" /></label>
         <div style="display: inline-block; width:70%">
             <input type="text" id="node-input-name" data-i18n="[placeholder]linto-skill-weather.placeholder.name" />
         </div>
     </div>
 
     <div class="form-row">
-        <label for="node-input-defaultCity"><i class="fa fa-tag"/><span data-i18n="linto-skill-weather.label.defaultCity" /></label>
+        <label for="node-input-defaultCity"><i class="fa fa-tag"></i> <span data-i18n="linto-skill-weather.label.defaultCity" /></label>
         <input type="text" id="node-input-defaultCity" data-i18n="[placeholder]linto-skill-weather.placeholder.defaultCity" />
     </div>
 
     <div class="form-row"> 
-        <label for="node-input-api"><i class="fa fa-tag"/> <span data-i18n="linto-skill-weather.label.api" /> </label>
+        <label for="node-input-api"><i class="fa fa-tag"></i> <span data-i18n="linto-skill-weather.label.api" /> </label>
         <select id="node-input-api" type="select" style="width:70%">
             <option value="microsoft" data-i18n="linto-skill-weather.shared.list_api.microsoft"/>
         </select>
     </div>
 
     <div class="form-row"> 
-        <label for="node-input-degreeType"><i class="fa fa-tag"/> <span data-i18n="linto-skill-weather.label.degreeType" /> </label>
+        <label for="node-input-degreeType"><i class="fa fa-tag"></i> <span data-i18n="linto-skill-weather.label.degreeType" /> </label>
         <select id="node-input-degreeType" type="select" style="width:70%">
             <option value="C" data-i18n="linto-skill-weather.shared.list_degreeType.celsius"/>
             <option value="F" data-i18n="linto-skill-weather.shared.list_degreeType.fahrenheit"/>
@@ -28,10 +28,10 @@
 
     <div class="form-row" style="margin-bottom: 0px;" >
         <label for="node-input-command" style="width: auto;">
-            <i class="fa fa-wrench"/>
-            <span data-i18n="linto-skill-weather.label.command" />
-            <span style="color:RED; font-weight: bold;" id="node-input-command-custom" data-i18n="linto-skill-weather.label.custom"/>
-            <span style="color:GREEN; font-weight: bold;" id="node-input-command-default" data-i18n="linto-skill-weather.label.default"/>
+            <i class="fa fa-wrench"></i> 
+            <span data-i18n="linto-skill-weather.label.command"></span>
+            <span style="color:RED; font-weight: bold;" id="node-input-command-custom" data-i18n="linto-skill-weather.label.custom"></span>
+            <span style="color:GREEN; font-weight: bold;" id="node-input-command-default" data-i18n="linto-skill-weather.label.default"></span>
         </label>
         <input type="hidden" id="node-input-command" autofocus="autofocus" />
     </div>
