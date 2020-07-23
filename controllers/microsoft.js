@@ -56,24 +56,28 @@ async function callWeatherApi(dataRequest) {
 function formatResponse(apiResponse, today, tts) {
   if (today) {
     return ({
-      phonetic: apiResponse[0].location.name + tts.temperatureToday.phonetic +
-        apiResponse[0].current.temperature + '°' + apiResponse[0].location.degreetype + ', ' +
-        tts.weatherTodayIs.phonetic + apiResponse[0].current.skytext,
-      text: apiResponse[0].location.name + tts.temperatureToday.text +
-        apiResponse[0].current.temperature + '°' + apiResponse[0].location.degreetype + ', ' +
-        tts.weatherTodayIs.text + apiResponse[0].current.skytext
+      say: {
+        phonetic: apiResponse[0].location.name + tts.temperatureToday.phonetic +
+          apiResponse[0].current.temperature + '°' + apiResponse[0].location.degreetype + ', ' +
+          tts.weatherTodayIs.phonetic + apiResponse[0].current.skytext,
+        text: apiResponse[0].location.name + tts.temperatureToday.text +
+          apiResponse[0].current.temperature + '°' + apiResponse[0].location.degreetype + ', ' +
+          tts.weatherTodayIs.text + apiResponse[0].current.skytext
+      }
     })
   }
   else {
     return {
-      phonetic: apiResponse[0].location.name + tts.temperatureNextDay.phonetic +
-        apiResponse[0].forecast[2].low + ' - ' + apiResponse[0].forecast[2].high +
-        '°' + apiResponse[0].location.degreetype + ', ' + tts.weatherNextIs.phonetic +
-        apiResponse[0].forecast[2].skytextday,
-      text: apiResponse[0].location.name + tts.temperatureNextDay.text +
-        apiResponse[0].forecast[2].low + ' - ' + apiResponse[0].forecast[2].high +
-        '°' + apiResponse[0].location.degreetype + ', ' + tts.weatherNextIs.text +
-        apiResponse[0].forecast[2].skytextday
+      say: {
+        phonetic: apiResponse[0].location.name + tts.temperatureNextDay.phonetic +
+          apiResponse[0].forecast[2].low + ' - ' + apiResponse[0].forecast[2].high +
+          '°' + apiResponse[0].location.degreetype + ', ' + tts.weatherNextIs.phonetic +
+          apiResponse[0].forecast[2].skytextday,
+        text: apiResponse[0].location.name + tts.temperatureNextDay.text +
+          apiResponse[0].forecast[2].low + ' - ' + apiResponse[0].forecast[2].high +
+          '°' + apiResponse[0].location.degreetype + ', ' + tts.weatherNextIs.text +
+          apiResponse[0].forecast[2].skytextday
+      }
     }
   }
 }
