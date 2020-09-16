@@ -22,7 +22,7 @@ module.exports = async function (msg) {
   } else if (this.config.defaultCity) {
     dataRequest.search = this.config.defaultCity
   } else {
-    return tts.say.error_no_city
+    return { say: tts.say.error_no_city }
   }
 
   try {
@@ -30,11 +30,11 @@ module.exports = async function (msg) {
     if (weatherResult) {
       return formatResponse(weatherResult, time === undefined, tts.say)
     } else {
-      return tts.say.error_city_weather
+      return { say: tts.say.error_city_weather }
     }
 
   } catch (error) {
-    return tts.say.error_api
+    return { say: tts.say.error_api }
   }
 }
 
