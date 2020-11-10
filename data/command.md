@@ -10,16 +10,27 @@
 - donne-moi la météo de [nice](location)
 
 ##intent|weather|en
-- what's the weather in [new york](location)
-- give me the weather at [london](location)
-- could you give me the weather of [london](location)
-- weather at [london](location)
-- can you give me the weather at [phoenix](location)
-- what's the weather of [tomorrow](time)
-- what is the weather for [tomorrow](time)
-- is the weather good [tomorrow](time)
-- the weather for [tomorrow](time) please
-- what's the weather in [toulouse](location) [tomorrow](time)
-- is the weather good [tomorrow](time) in [toulouse](location)
-- what's the weather for [tomorrow](time) in [paris](location)
-- the weather at [roma](location)
+- weather in [london](location) please
+- the weather in [roma](location)
+- the weather for [tomorrow](time)
+- is the weather good
+- is the weather nice in [paris](location)
+- is the weather good in [monaco](location) [tomorrow](time)
+- will it be nice in [berlin](location) [tomorrow](time)
+- will it be nice [tomorrow](time) in [new york](location)
+- will the weather be good
+- will the weather be nice [tomorrow](time) in [new york](location)
+- what is the weather in [bordeaux](location)
+- what's the weather [tomorrow](time)
+- what's [tomorrow](time)'s weather
+- what is [tomorrow](time)'s weather
+- how's the weather in [new york](location) [tomorrow](time)
+- how is the weather in [paris](location) [tomorrow](time)
+- could you give me the weather in [london](location)
+- could you give me the weather for [tomorrow](time)
+- can you give me the weather in [boston](location)
+- can you give me the weather for [tomorrow](time)
+- can you give me [tomorrow](time)'s weather
+- tell me the weather in [rennes](location)
+- tell me [tomorrow](time)'s weather
+- tell me the weather in [nantes](location) [tomorrow](time)
